@@ -1,0 +1,52 @@
+Algoritmo sin_titulo
+	Definir costoEntrada Como Real
+	Definir dia, edad Como Entero
+	Definir sexo Como Caracter
+	Definir descuento, montoDescuento, costoFinal Como Real
+	Escribir "INGRESA TU NOMBRE"
+	Leer nombre
+	Repetir
+		Escribir "Ingrese sexo:"
+		Escribir "[M] Masculino"
+		Escribir "[F] Femenino"
+		Leer sexo
+	Hasta Que sexo = "M" o sexo = "F"
+	Repetir
+		Escribir "Ingrese si tiene o no tiene deuda:"
+		Escribir "[S.D] Sin Deuda"
+		Escribir "[C.D] Con Deuda"
+		Leer sexo
+	Hasta Que sexo = "S.D" o sexo = "C.D"
+	
+
+	
+	Repetir
+		Escribir "Ingrese llantas:"
+		Leer llantas
+	Hasta Que llantas  <= 12 o llantas >= 13 
+	descuento <- 0
+	
+	
+	Si llantas  <= 12  Entonces
+		descuento <- 0.20
+		costoEntrada <- 250 
+	FinSi
+	
+	Si llantas >= 13  Entonces
+		descuento <- 0.25
+		costoEntrada <- 220
+	FinSi
+	
+	mulyi <- costoEntrada * llantas
+	montoDescuento <- mulyi * descuento
+	costo <- montoDescuento - costoEntrada 
+	costoFinal <- mulyi - costo 
+	
+	Escribir "Precio regular: S/ ", costoEntrada
+	Escribir "PREIO SIN DESCUENTO: S/ ", mulyi
+	
+	Escribir "El porcentaje de descuento es: ", descuento * 100, "%"
+	Escribir "El descuento es: /S ", montoDescuento
+	Escribir "El costo final es: S/ ", costoFinal
+
+FinAlgoritmo
