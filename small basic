@@ -1,0 +1,44 @@
+TextWindow.ForegroundColor="blue"
+TextWindow.WriteLine("Ingresa el numero de veces que desees que se repita")
+
+n= TextWindow.ReadNumber()
+For h=1 To 1
+  
+   TextWindow.ForegroundColor="yellow"
+  TextWindow.WriteLine("Escribe el valor de la base del triangulo")
+  numero= TextWindow.Read()
+  
+  TextWindow.WriteLine("Escribe el valor de la altura del triangulo")
+  numero1= TextWindow.Read()
+  
+  TextWindow.ForegroundColor="red"
+TextWindow.WriteLine("El area del triangulo es:")
+TextWindow.WriteLine((numero*numero1)/2)
+
+
+TextWindow.ForegroundColor="blue"
+TextWindow.WriteLine("Escribe el valor de la base del rectangulo")
+  numero3= TextWindow.Read()
+  
+  TextWindow.WriteLine("Escribe el valor de la altura del rectangulo")
+  numero5= TextWindow.Read()
+  
+  TextWindow.ForegroundColor="red"
+TextWindow.WriteLine("El area del rectangulo es:")
+TextWindow.WriteLine(numero3 * numero5)
+
+
+TextWindow.ForegroundColor="green"
+TextWindow.WriteLine("Escribe el lado de tu cuadrado")
+  numero4= TextWindow.Read()
+
+  TextWindow.ForegroundColor="red"
+TextWindow.WriteLine("El area del cuadrado es:")
+TextWindow.WriteLine(numero4 * numero4)
+
+
+EndFor
+
+
+
+  
